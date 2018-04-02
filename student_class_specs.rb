@@ -7,29 +7,29 @@ class TestStudent < MiniTest::Test
   def test_student_name()
 
       test_student = Student.new("Connor", 5)
-      assert_equal("Connor", test_student.student_name)
+      assert_equal("Connor", test_student.name)
   end
 
   def test_student_cohort()
 
     test_student = Student.new("Connor", 5)
-    assert_equal(5, test_student.student_cohort)
+    assert_equal(5, test_student.cohort)
 
   end
 
   def test_set_student_name()
 
     test_student = Student.new("Connor", 5)
-    test_student.set_student_name("Ev")
-    assert_equal("Ev", test_student.student_name)
+    test_student.name = "Ev"
+    assert_equal("Ev", test_student.name)
 
   end
 
   def test_set_student_cohort()
 
     test_student = Student.new("Connor", 5)
-    test_student.set_student_cohort(4)
-    assert_equal(4, test_student.student_cohort)
+    test_student.cohort = 4
+    assert_equal(4, test_student.cohort)
 
   end
 

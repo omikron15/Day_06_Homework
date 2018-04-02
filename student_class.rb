@@ -8,22 +8,6 @@ class Student
 
   end
 
-  def student_name
-    return @name
-  end
-
-  def student_cohort
-    return @cohort
-  end
-
-  def set_student_name(name)
-      @name = name
-  end
-
-  def set_student_cohort(cohort)
-      @cohort = cohort
-  end
-
   def studnet_talk()
       return "I can talk!"
   end
