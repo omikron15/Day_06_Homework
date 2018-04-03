@@ -7,27 +7,15 @@ class Team
     @coach = coach
     @points = 0
 
-
-
-  end
+  end #End of initialize method
 
   def add_player(player_name)
     @player_names.push(player_name)
-  end
+  end #End of add_player method
 
   def search_players(search_names)
-
-    for each_player in search_names
-      if @player_names.include?(each_player)
-        #do nothing
-      else
-        return false
-
-      end
-
-    end
-    return true
-  end
+      @player_names.include?(each_player)
+  end #End of search_players method
 
   def update_points(result)
     if result == "Win"
@@ -36,8 +24,8 @@ class Team
       #No change to points
     else
       #error of some kind
-    end
+    end #End of if
 
-  end
+  end #End of update_points
 
-end
+end #End of team class
